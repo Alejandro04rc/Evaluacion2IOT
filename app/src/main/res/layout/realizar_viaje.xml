@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/fondo2"
+    tools:context=".RealizarViajeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:elevation="4dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:src="@drawable/lupa"/>
+
+        <EditText
+            android:id="@+id/adondevas"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="¿A dónde vas?"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/fondomapa"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/btnIniciarViaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Viaje"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnVolverHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver atras"
+        android:padding="12dp"
+        android:layout_gravity="start|bottom"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

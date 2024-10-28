@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/fondo3"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:textColor="@color/black"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnRealizarViaje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Realizar Viaje" />
+
+        <ImageView
+            android:id="@+id/iconRealizarViaje"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/realizarviaje"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnHistorial"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:text="Historial" />
+
+        <ImageView
+            android:id="@+id/iconHistorial"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/historialviajes"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnFavoritos"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:text="Favoritos" />
+
+        <ImageView
+            android:id="@+id/iconFavoritos"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/favoritos"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="32dp">
+
+        <ImageView
+            android:id="@+id/fondo"
+            android:layout_width="300dp"
+            android:layout_height="220dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/mapafondo"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="Volver" />
+
+</LinearLayout>
